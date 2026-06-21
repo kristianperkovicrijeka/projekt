@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instrukcije KriSci</title>
     <link rel="stylesheet" href="style.css">
-    
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-</head>
+    </head>
 <body>
     <header class="header">
         <h1>Instrukcije KriSci 👨‍🏫</h1>
@@ -58,7 +56,7 @@
                 </a>
                 <a href="povijest.html" class="predmet-kartica predmet-pov">
                     <h3>Povijest 📜</h3>
-                    <p>Spremimmo se na putovanje sve od nastanka svemira pa do danas!</p>
+                    <p>Spremimo se na putovanje sve od nastanka svemira pa do danas!</p>
                 </a>
                 <a href="biologija.html" class="predmet-kartica predmet-bio">
                     <h3>Biologija 🧬</h3>
@@ -91,7 +89,10 @@
             <h2 style="text-align: center;">Zakaži svoj termin!</h2>
             <p style="text-align: center;">Javi mi se da dogovorimo termin. Možemo uživo u Rijeci ili online!</p>
 
-            <div id="map" style="height: 400px; width: 100%; border-radius: 10px; margin-bottom: 20px;"></div>
+            <div id="vrijeme-widget" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; max-width: 400px; margin: 20px auto; color: #333;">
+                <h3>Trenutno vrijeme u Rijeci 🌤️</h3>
+                <p id="vrijeme-podaci">Učitavam podatke o vremenu</p>
+            </div>
 
             <p style="text-align: center; margin-top: 20px;">
                 Pošalji mi upit direktno na: 
@@ -101,15 +102,7 @@
             </p>
         </div>
     </div> 
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script>
-        var map = L.map('map').setView([45.326267, 14.444870], 13);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap'
-        }).addTo(map);
-        var marker = L.marker([45.326267, 14.444870]).addTo(map);
-        marker.bindPopup("<b>Instrukcije kod Kristiana!</b><br>Rijeka ili Online 🎓").openPopup();
-    </script>
+
+    <script src="main.js"></script>
 </body>
 </html>

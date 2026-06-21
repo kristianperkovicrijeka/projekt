@@ -1,1 +1,1 @@
-Ovo je novi projekt za kolegij Projektni praktikum. HTML i CSS su preneseni s prethodnog kolegija Razvoj API-ja pod mentorstvom prof.Šimca
+Prerađeni projekt koji je originalo napravljen za potrebe kolegija Razvoj API-ja pod mentorstvom prof. Šimca
