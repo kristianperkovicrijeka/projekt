@@ -7,7 +7,7 @@ CORS(app)
 
 @app.route('/index.html', methods=['GET'])
 def dohvati_vrijeme():
-    latitude = 45.327
+    latitude = 45.327 # Koordinate za Rijeku
     longitude = 14.442
     url = f"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current_weather=true"
     
