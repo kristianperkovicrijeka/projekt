@@ -1,0 +1,1 @@
+Prerađeni projekt koji je originalo napravljen za potrebe kolegija Razvoj API-ja pod mentorstvom prof. Šimca

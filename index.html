@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instrukcije KriSci</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header class="header">
+        <h1>Instrukcije KriSci 👨‍🏫</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#o-meni">O meni</a></li>
+                <li class="dropdown">
+                    <a href="#predmeti" class="dropbtn">Predmeti ▼</a>
+                    <div class="dropdown-content">
+                        <a href="matematika.html">Matematika</a>
+                        <a href="informatika.html">Informatika</a>
+                        <a href="engleski.html">Engleski jezik</a>
+                        <a href="povijest.html">Povijest</a>
+                        <a href="biologija.html">Biologija</a>
+                        <a href="kemija.html">Kemija</a>
+                    </div>
+                </li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <p id="poruka-pozdrava" style="font-weight: bold; font-size: 1.2rem; margin-top: 5px;"></p>
+    </header>
+
+    <div class="container">
+        <div id="o-meni">
+            <h2>Tko sam ja?</h2>
+            <img src="slika.jpg" alt="Moja profilna slika" width="150" class="scaled-image">
+            <p>Ja sam Kristian, student informatike u Rijeci. Moja strast su sve znanosti, od prirodnih do
+                društvenih od prvih razreda osnovne škole pa sve do mature.</p>
+        </div>
+        
+        <hr>
+
+        <div id="predmeti">
+            <h2>Predmeti koje nudim</h2>
+            <div class="predmeti-container">
+                <a href="matematika.html" class="predmet-kartica predmet-mat">
+                    <h3>Matematika 📐</h3>
+                    <p>Nudim instrukcije i pripreme iz gradiva matematike od prvog razreda osnovne škole pa sve do zadnjih razreda srednje škole!</p>
+                </a>
+                <a href="informatika.html" class="predmet-kartica predmet-inf">
+                    <h3>Informatika 💻</h3>
+                    <p>Što je Kernel? Kako se radi JS skripta?</p>
+                </a>
+                <a href="engleski.html" class="predmet-kartica predmet-eng">
+                    <h3>Engleski jezik 💂🏻‍♀️</h3>
+                    <p>Tko je kralj engleske? Zašto postoji toliko naglasaka engleskog, kako se piše bjutiful?</p>
+                </a>
+                <a href="povijest.html" class="predmet-kartica predmet-pov">
+                    <h3>Povijest 📜</h3>
+                    <p>Spremimo se na putovanje sve od nastanka svemira pa do danas!</p>
+                </a>
+                <a href="biologija.html" class="predmet-kartica predmet-bio">
+                    <h3>Biologija 🧬</h3>
+                    <p>Kako ribe dišu? Kako mačke predu? Odgovore na ta pitanja saznat ćemo skupa!</p>
+                </a>
+                <a href="kemija.html" class="predmet-kartica predmet-kem">
+                    <h3>Kemija 🧪</h3>
+                    <p>Nikad VUK, uvijek KUV? Tko je taj VUK i zašto je bitan saznat ćeš ovdje!</p>
+                </a>      
+            </div>
+        </div>
+
+        <hr> 
+
+        <div id="recenzije">
+            <h2>Što kažu moji učenici? 💬</h2>
+            <div class="slider-okvir">
+                <div class="slider-traka"> 
+                    <div class="recenzija-kartica"><p>⭐⭐⭐⭐⭐</p><p>"Kristian je zakon!"</p><h4>- Marko, 4. razred</h4></div>
+                    <div class="recenzija-kartica"><p>⭐⭐⭐⭐⭐</p><p>"Povijest je kao film."</p><h4>- Ana, 2. razred</h4></div>
+                    <div class="recenzija-kartica"><p>⭐⭐⭐⭐⭐</p><p>"Engleski je sad lakši."</p><h4>- Ivan, 7. razred</h4></div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="kontakt">
+            <h2 style="text-align: center;">Zakaži svoj termin!</h2>
+            <p style="text-align: center;">Javi mi se da dogovorimo termin. Možemo uživo u Rijeci ili online!</p>
+
+            <div id="vrijeme-widget" style="background: #f9f9f9; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; max-width: 400px; margin: 20px auto; color: #333;">
+                <h3>Trenutno vrijeme u Rijeci 🌤️</h3>
+                <p id="vrijeme-podaci">Učitavam podatke o vremenu</p>
+            </div>
+
+            <p style="text-align: center; margin-top: 20px;">
+                Pošalji mi upit direktno na: 
+                <a href="mailto:instrukcijekrisci@gmail.com" style="color: #007bff; font-weight: bold; text-decoration: none;">
+                    instrukcijekrisci@gmail.com
+                </a>
+            </p>
+        </div>
+    </div> 
+
+    <script src="main.js"></script>
+</body>
+</html>

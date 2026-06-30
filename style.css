@@ -1,0 +1,254 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #4A6B4A; 
+    color: #ffffff;
+}
+header.header {
+    background: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    color: #333; 
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+nav.nav ul.nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #007BFF; 
+}
+div.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    color: #333;
+}
+h2 {
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+}
+.predmeti-container {
+    display: flex;
+    flex-wrap: wrap;       
+    justify-content: center;
+    gap: 1.5rem;             
+}
+
+/* Stil za svaku KARTICU */
+a.predmet-kartica {
+    background: #ffffff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08); 
+    padding: 1.5rem 2rem;
+    text-align: center;
+    flex-basis: 300px; 
+    flex-grow: 1; 
+    border-top: 4px solid #ccc; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #333;
+}
+a.predmet-kartica:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+av.predmet-kartica h3 {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    color: #333;
+}
+/* Prirodne znanosti = ZELENA */
+.predmet-bio,
+.predmet-kem {
+    border-top-color: #28a745; /* Zelena */
+}
+
+/* Društvene znanosti = PLAVA */
+.predmet-pov,
+.predmet-eng {
+    border-top-color: #007BFF; /* Plava */
+}
+
+/* Tehničke/STEM = Topla boja */
+.predmet-mat,
+.predmet-inf {
+    border-top-color: #fd7e14; /* Topla narančasta */
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 2rem 0;
+}
+
+#kontakt {
+    text-align: center;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+#recenzije {
+    text-align: center;
+    padding: 2rem 0;
+    overflow: hidden; /* Skriva scrollbar ako nešto izleti */
+}
+
+.slider-okvir {
+    width: 100%;
+    overflow: hidden; /* Ključno: skriva sve što je "izvan" ekrana desno ili lijevo */
+    position: relative;
+}
+
+.slider-traka {
+    display: flex;
+    width: calc(250px * 8);
+    animation: klizanje 20s linear infinite;
+}
+.slider-traka:hover {
+    animation-play-state: paused;
+}
+.recenzija-kartica {
+    width: 250px;
+    background: #fff;
+    color: #333;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 0 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-left: 5px solid #ffd700;
+    flex-shrink: 0;
+}
+.recenzija-kartica h4 {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #555;
+}
+@keyframes klizanje {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+         transform: translateX(calc(-280px * 4)); 
+    }
+}
+div.footer { 
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: #fff;
+    margin-top: 2rem;
+}
+.scaled-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .predmeti-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    a.predmet-kartica {
+        width: 90%;
+        flex-basis: auto;
+    }
+    nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+.dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #007BFF !important;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#map {
+    height: 400px;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+#map {
+    height: 400px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.leaflet-control-zoom {
+    position: absolute;
+    top: 316px;
+    left: 9px;
+    border: 2px solid #007bff !important;
+}
